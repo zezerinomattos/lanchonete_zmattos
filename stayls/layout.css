@@ -1,0 +1,646 @@
+/*
+div#teste{
+    background-color: aquamarine;
+    position: fixed;
+    top: 0; left: 0;
+    width: 300px;
+    height: 60px;
+    z-index: 10;
+    color: #000;
+}
+
+
+CORES
+Amarelo queimado = #BF7E04;
+Amarelo queimado mais escuro = #A64F03;
+Marrom vermelho = #8C2703;
+Verniz claro = #591202
+Verniz escuro = #260101
+*/
+
+header#header-index{
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0)) ,url(../imagens/img_grande_principal_hader.jpg);
+
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background-position: center center;
+    border-top: 2px solid #BF7E04;
+    clip-path: polygon(0 0, 100% 0, 100% 97%, 0 100%);
+    position: relative;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    width: 95%;
+    height: 200px;
+    margin: 10px auto;
+}
+
+nav div#logo{
+    background-image: url(../imagens/img_logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px;
+    float: left;
+
+    animation-name: ChamadaA;
+    animation-duration: 2.5s;
+    animation-timing-function: ease-out;
+    animation-delay: 0.5s;
+    animation-fill-mode: backwards;
+}
+
+nav ul.esquerda{
+    float: left;
+}
+
+nav ul.direita{
+    float: right;
+}
+
+nav ul{
+    display: flex;
+    flex-wrap: row wrap;
+    justify-content: left;
+    margin-top: 70px;
+    height: 40px;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 100px;
+
+    font-size: 90%;
+}
+
+nav ul li a.criarconta{
+    border: 1px solid #FFF;
+    padding: 9px 29px;
+}
+
+nav ul li a:hover{
+    background-color: #A64F03;
+    transition-duration: 0.8s;
+}
+
+nav ion-icon#icone-user{
+    width: 45px;
+    height: 45px;
+    color: white;
+    margin-top: -13px;
+    margin-left: 20px;
+}
+
+nav ion-icon#icone-user:hover{
+    color: #A64F03;
+    transition-duration: 0.8s;
+}
+
+header div#chamada{
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*----------------------------*/
+/*  SEÇÃO - DIA PERFEITO      */
+/*----------------------------*/
+
+section#dia-perfeito{
+    width: 100%;
+    padding: 40px 0 80px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+div#dia-perfeito-esquerda, div#dia-perfeito-direita{
+    position: relative;
+    width: 15%;
+}
+
+div.folha1{
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    width: 150px;
+    height: 150px;
+    background: url(../imagens/secao09-folha1.png) no-repeat;
+
+    opacity: 0;
+}
+
+div.camarao{
+    position: absolute;
+    top: 280px;
+    left: 0;
+    width: 150px;
+    height: 150px;
+    background: url(../imagens/secao09-camarao.jpg) no-repeat;
+
+    opacity: 0;
+}
+
+div.folha2{
+    position: absolute;
+    top: 520px;
+    left: 50px;
+    width: 150px;
+    height: 150px;
+    background: url(../imagens/secao09-folha2.png) no-repeat;
+
+    opacity: 0;
+}
+
+div.folha3{
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    width: 150px;
+    height: 150px;
+    background: url(../imagens/secao09-folha3.png)no-repeat;
+
+    opacity: 0;
+}
+
+div.tomate{
+    position: absolute;
+    top: 300px;
+    left: 60px;
+    width: 150px;
+    height: 150px;
+    background: url(../imagens/secao09-tomate.png) no-repeat;
+
+    opacity: 0;
+}
+
+div.queijo{
+    position: relative;
+    top: 600px;
+    left: 10px;
+    width: 180px;
+    height: 180px;
+    background: url(../imagens/secao09-queijo.jpg) no-repeat;
+
+    opacity: 0;
+}
+
+div#dia-perfeito-centro{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+div#pontos-chaves-mestre{
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+div.pontos-chaves{
+    text-align: center;
+    width: 25%;
+}
+
+section#dia-perfeito div.pontos-chaves ion-icon{
+    width: 50px;
+    height: 50px;
+    color: #8C2703;
+}
+
+/*-----------------------------*/
+/*         SEÇÃO LANCHES       */
+/*-----------------------------*/
+
+body#lanche{
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.4)), url(../imagens/bacground_secao_lanches.jpg);
+
+    background-size: cover; 
+}
+
+header#lanchee{
+    width: 80%;
+    height: 40px;
+    line-height: 40px;
+    margin: 0px auto;   
+}
+
+section#lanches{
+    padding: 40px 0 80px;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+div#lanches-opcoes-mestre{
+    width: 80%;
+    margin-top: 30px;    
+    display: flex;
+    flex-flow: row wrap;
+
+}
+
+div.lanches-opcoes{
+    width: 33.3%;
+    text-align: center;
+    
+    margin: 5px 0;
+}
+
+div.lanches-opcoes h4, ul {
+    animation-name: Lanches-lanches;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: backwards;
+    
+}
+
+
+
+/*-----------------------------*/
+/*         SEÇÃO BEBIDAS       */
+/*-----------------------------*/
+
+body#body-bebidas{
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.4)), url(../imagens/background_bebidas.jpg);
+
+    background-size: cover;
+}
+header#header-bebidas{
+    width: 80%;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 auto;
+}
+section#bebidas{
+    padding: 40px 0 80px;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+div#bebidas-opcoes-mestre{
+    width: 80%;
+    margin-top: 30px;
+    
+}
+
+div#bebidas-opcoes{
+    width:100%;
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    
+}
+
+div#bebidas-opcoes ul li{
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+/*----------------------------*/
+/*  SEÇÃO - DEPOIMENTOS       */
+/*----------------------------*/
+
+section#testemunha{
+    width: 100%;
+    padding: 40px 0 80px;
+    background-image: linear-gradient(rgba(255,255,255,1), rgba(255,255,255,0.8), rgba(255,255,255,1)), url(../imagens/imagem_background_Grande.jpg);
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+div#testemunha-mestre{
+    width: 100%;
+    margin-top: 90px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+    height: 300px;
+}
+
+div#testemunha-esquerda, div#testemunha-direita{
+    width: 15%;
+    height: 300px;
+    cursor: pointer;
+}
+
+div#testemunha-mestre ion-icon{
+    width: 90%;
+    height: 90%;
+    color: #8C2703;
+}
+
+div#testemunha-esquerda ion-icon{
+    opacity: 0.5;
+}
+
+div#testemunha-centro{
+    width: 70%;
+    margin-top: 0 auto;
+    height: 300px;
+    position: relative;
+
+    max-width: 1010px;
+    overflow: hidden;
+}
+
+div#testemunhos{
+    position: absolute;
+    left: 0;
+    width: 2680px;
+}
+
+section#testemunha div#testemunha-centro div#testemunhos ul{
+    display: inline-table;
+    width: 260px;
+    background-color: #FFF;
+    padding: 30px;
+    margin: 50px 15px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+section#testemunha div#testemunha-centro div#testemunhos ul li{
+    list-style: none;
+    display: inline-table;
+    width: 90%;
+    margin: 0;
+}
+
+section#testemunha div#testemunha-centro div#testemunhos ul li h5{
+    font-size: 150%;
+}
+
+section#testemunha div#testemunha-centro div#testemunhos ul li p{
+    line-height: 1.5;
+    color: #404040;
+    font-size: 90%;
+}
+
+section#testemunha div#testemunha-centro div#testemunhos ul li img{
+    width: 40%;
+    border-radius: 100%;
+    margin-top: -80px;
+    margin-bottom: 20px;
+    border: 5px solid #8C2703;
+}
+
+/*----------------------------*/
+/*  SEÇÃO - TRANSIÇÃO       */
+/*----------------------------*/
+
+div#transicao-testemunha-plano{
+    width: 100%;
+    height: 280px;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+div#transicao-testemunha-plano div#decoracao1{
+    width: 30%;
+    height: 100%;
+    padding-left: 30px;
+    background: url(../imagens/secao13-tomate-manjericao-alho.jpg) no-repeat;
+    background-position: top center;
+}
+
+div#transicao-testemunha-plano div#decoracao2{
+    width: 30%;
+    height: 100%;
+    background: url(../imagens/secao13-azeite.jpg) no-repeat;
+    background-position: top center;
+}
+
+div#transicao-testemunha-plano div#decoracao3{
+    width: 30%;
+    height: 100%;
+    background: url(../imagens/secao13-detalhe-tomate.jpg) no-repeat;
+    background-position: right center;
+}
+
+/*----------------------------*/
+/*  SEÇÃO - PLANOS            */
+/*----------------------------*/
+
+section#plano-principal{
+    width: 100%;
+    padding: 40px 0 80px;
+}
+div#planos-janela{
+    width: 80%;
+    margin: 30px auto;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+div.planos{
+    width: 23.3%;
+    height: 450px;
+    margin: 80px 30px;
+}
+
+div.planos-top{
+    width: 100%;
+    height: 350px;
+    background-color: #f7f7f7;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    text-align: center;
+
+    box-shadow: 2px 2px 3px #ccc;
+}
+
+div.planos-bottom{
+    width: 100%;
+    height: 100px;
+    background-color: #078C31;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 2px 2px 3px #ccc;
+
+    cursor: pointer;
+}
+
+header#header-planos{
+    width: 80%;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 auto;
+}
+
+/*-----------------------------*/
+/*         SEÇÃO IMAGEM        */
+/*-----------------------------*/
+
+section#imagem{
+    width: 100%;
+    margin: auto;
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+
+}
+
+section#imagem div#imagem-mestre, div#imagem-mestre-primeira-img{
+    width: 100%;
+    margin-top: 10px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;  
+}
+
+section#imagem div#imagem-mestre ul, div#imagem-mestre-primeira-img ul{
+    display: inline-table;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+section#imagem div#imagem-mestre ul li, div#imagem-mestre-primeira-img ul li{
+    list-style: none;
+    display: inline-table;
+    width: 300px;
+    height: 300px;
+    margin: 15px 5px 15px 5px;
+}
+
+div#imagem-mestre-primeira-img ul li img{
+    width: 100%;
+    height: 100%;
+    border: 5px solid #F03733;
+    border-radius: 10px;
+
+    animation-name: Imagem-PrimeiroUl;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: backwards;
+}
+
+section#imagem div#imagem-mestre ul li img {
+    width: 100%;
+    height: 100%;
+    border: 5px solid #F03733;
+    border-radius: 10px;
+}
+
+/*----------------------------*/
+/*        FOOTER              */
+/*----------------------------*/
+div#transicao-plano-rodape{
+    width: 100%;
+    height: 36px;
+    background-image: linear-gradient(rgba(255,255,255,1), rgba(255,255,255,0.5)), url(../imagens/secao15-mesa-xadrez-clara.png);
+}
+
+footer{
+    width: 100%;
+    height: 500px;
+    background: url(../imagens/secao15-mesa-xadrez.png);
+    padding-top: 36px;
+    padding-left: 36px;
+    border-bottom: 10px solid #F03733;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+footer div#mapa{
+    width: 35%;
+    height: 390px;
+    background-color: #FFF;
+
+    box-shadow: 0 3px 10px #404040;
+}
+
+footer div#info{
+    width: 30%;
+    height: 390px;
+    background-color: #F03733;
+    box-shadow: 0 3px 10px #404040;
+    padding-left: 15px;
+}
+
+footer div#info div#redes-sociais{
+    width: 80%;
+    height: 70px;
+    
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+
+div#redes-sociais ion-icon{
+    color: #FFF;
+    height: 100%;
+    width: 20%;
+    cursor: pointer;
+}
+
+div#redes-sociais ion-icon:hover{
+    color: #F2B705;
+    transition-duration: 0.8s;
+}
+
+footer div#lanche-rodape-decoracao{
+    width: 300px;
+    height: 310px;
+    margin-top: 145px;
+    background-image: url(../imagens/secao15-lanche-rodape.png);
+    background-repeat: no-repeat;
+}
+
+    

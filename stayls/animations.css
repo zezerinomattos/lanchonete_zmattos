@@ -1,0 +1,197 @@
+/*Animacao do titulo*/
+
+@keyframes HeaderH1{
+    0%{
+        opacity: 0;
+        font-size: 100%;
+    }
+
+    80%{
+        font-size: 450%;
+    }
+    100%{
+        opacity: 1;
+        font-size: 400%;
+    } 
+}
+
+@keyframes ChamadaA{
+    0%{
+        opacity: 0;
+        transform: translateY(50px) rotate(-400deg);
+    }
+    25%{
+        opacity: 0.2;
+    }
+
+    75%{
+        opacity: 0.8;;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes HeaderA-moverParaCima{
+    0%{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/*Animacao da secao lanches*/
+
+@keyframes LanchesH1{
+    0%{
+        opacity: 0;
+        font-size: 50%
+    }
+
+    80%{
+        opacity: 0.6;
+        font-size: 300%
+    }
+
+    100%{
+        opacity: 1;
+        font-size: 250%;
+    }
+}
+
+@keyframes Lanches-P-destaque{
+    0%{
+        opacity: 0;
+        font-size: 30%;
+    }
+    80%{
+        font-size: 140%;
+    }
+    100%{
+        opacity: 1;
+        font-size: 130%;
+    }
+}
+
+@keyframes Lanches-lanches{
+    0%{
+        opacity: 0;
+        font-size: 30%;
+    }
+    80%{
+        font-size: 140%;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+/*Animacao da secao lanches*/
+
+@keyframes BebidasH1{
+    0%{
+        opacity: 0;
+        font-size: 50%
+    }
+
+    80%{
+        opacity: 0.6;
+        font-size: 300%
+    }
+
+    100%{
+        opacity: 1;
+        font-size: 250%;
+    }
+}
+
+@keyframes Bebidas-P-destaque{
+    0%{
+        opacity: 0;
+        font-size: 30%;
+    }
+    80%{
+        font-size: 140%;
+    }
+    100%{
+        opacity: 1;
+        font-size: 130%;
+    }
+}
+
+/*Animacao da secao bebidas*/
+@keyframes Bebidas-P-destaque{
+    0%{
+        opacity: 0;
+        font-size: 30%;
+    }
+    80%{
+        font-size: 140%;
+    }
+    100%{
+        opacity: 1;
+        font-size: 130%;
+    }
+}
+
+@keyframes Bebidas-lanches{
+    0%{
+        opacity: 0;
+        font-size: 30%;
+    }
+    80%{
+        font-size: 140%;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+/*Animacao da secao Imagem*/
+
+@keyframes ImagemH2{
+    0%{
+        opacity: 0;
+        transform: translateX(-200px);
+    }
+    80%{
+        transform: translateX(15px);
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes ImagemP{
+    0%{
+        opacity: 0;
+        transform: translateX(200px);
+    }
+    80%{
+        transform: translateX(-10px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes Imagem-PrimeiroUl{
+    0%{
+        opacity: 0;
+    }
+    70%{
+        opacity: 0.6;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
