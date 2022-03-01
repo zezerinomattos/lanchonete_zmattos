@@ -1,0 +1,37 @@
+/*------TIPOGRAFIA------------- */
+
+/*----------------------------*/
+/*  SEÇÃO - PLANOS            */
+/*----------------------------*/
+section#plano-principal div#planos-janela{
+    width: 100%;
+    padding-right: 80px;
+}
+
+div.planos{
+    margin: 80px 5px;
+}
+
+@media screen and (max-width:970px) {
+    section#plano-principal ul li{
+        font-size: 65%;
+        margin-left: 2px;
+    }
+}
+
+/*----------------------------*/
+/*        FOOTER              */
+/*----------------------------*/
+footer div#mapa{
+    width: 45%;
+    margin-left: 54px;
+}
+
+footer div#info{
+    margin-right: auto;
+    
+}
+
+footer div#lanche-rodape-decoracao{
+    display: none;
+}
