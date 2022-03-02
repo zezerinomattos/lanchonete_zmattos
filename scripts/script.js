@@ -129,19 +129,30 @@ $('div#transicao-testemunha-plano').waypoint(function(direcao){
 /*  SEÇÃO - PLANOS            */
 /*----------------------------*/
 //Tirando a opacidade do elemento testemunho
-$('div.planos:eq(0)').css('opacity', 0);
+//$('div.planos:eq(0)').css('opacity', 0);
 $('div.planos:eq(1)').css('opacity', 0);
 $('div.planos:eq(2)').css('opacity', 0);
 
 $('section#plano-principal').waypoint(function(direcao){
     if(direcao == 'down'){
-        $('div.planos:eq(0)').addClass('animate__animated animate__fadeInLeft animate__slow');
-        $('div.planos:eq(1)').addClass('animate__animated animate__fadeInUp animate__slow');
+       /* $('div.planos:eq(0)').addClass('animate__animated animate__fadeInLeft animate__slow');*/
+        $('div.planos:eq(1)').addClass('animate__animated animate__fadeInLeft animate__slow');
         $('div.planos:eq(2)').addClass('animate__animated animate__fadeInRight animate__slow');
     }else{
-        $('div.planos:eq(0)').removeClass('animate__animated animate__fadeInLeft animate__slow');
+        /*$('div.planos:eq(0)').removeClass('animate__animated animate__fadeInLeft animate__slow');
         $('div.planos:eq(1)').removeClass('animate__animated animate__fadeInUp animate__slow');
-        $('div.planos:eq(2)').removeClass('animate__animated animate__fadeInRight animate__slow');
+        $('div.planos:eq(2)').removeClass('animate__animated animate__fadeInRight animate__slow');*/
+    }
+}, {
+    offset:'0px;'
+})
+
+$('section#plano-principal h2').waypoint(function(direcao){
+    if(direcao == 'down'){
+        console.log('descendo');
+    }
+    if(direcao == 'up'){
+        console.log('subindo');
     }
 }, {
     offset:'0px;'

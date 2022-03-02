@@ -1,0 +1,110 @@
+
+/*-----------------------------*/
+/*         SEÇÃO LANCHES       */
+/*-----------------------------*/
+@media screen and (max-width:730px) {
+    div#lanches-opcoes-mestre{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    div.lanches-opcoes{
+        width: 90%;
+        text-align: center;
+    }
+
+}
+
+/*------TIPOGRAFIA------------- */
+
+@media screen and (max-width:730px) {
+    section#lanches h2{
+        font-size: 130%;
+    }
+
+    section#lanches p.destaque{
+        font-size: 60%;
+        width: 80%;
+    }
+
+    section#lanches div#lanches-opcoes-mestre h4{
+        font-size: 170%;
+        margin-left: 25px;
+    }   
+
+    section#lanches ul li{
+        padding-top: 20px;
+        margin-bottom: 10px;
+        border: 2px solid #FFF;
+        border-radius: 10px;
+    }
+
+}
+
+/*-----------------------------*/
+/*         SEÇÃO BEBIDAS       */
+/*-----------------------------*/
+
+
+/*-------TIPOGRAFIA------------*/
+
+section#bebidas h2{
+    font-size: 100%;
+    font-weight: 500;
+    width: 90%;
+}
+
+section#bebidas p.destaque{
+    width: 80%;   
+}
+
+/*----------------------------*/
+/*  SEÇÃO - PLANOS            */
+/*----------------------------*/
+section#plano-principal{
+    padding: 20px 0 40px;
+}
+
+div#planos-janela{
+    width: 90%;
+    margin-left: 20px;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+div.planos{
+    width: 90%;
+    height: 350px;
+    margin: 80px 30px;
+}
+
+div#planos-janela div#plano1{
+    animation-name: planos1;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: backwards;
+}
+
+/*-------TIPOGRAFIA------------*/
+section#plano-principal ul li{
+    font-size: 80%;
+    margin-left: 2px;
+}
+
+/*----------------------------*/
+/*        FOOTER              */
+/*----------------------------*/
+footer div#mapa{
+    display: none;
+}
+
+footer div#info{
+    width: 90%; 
+}
+
+
+

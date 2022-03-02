@@ -1,4 +1,108 @@
+/*----------------------------*/
+/*  SEÇÃO - LANCHES           */
+/*----------------------------*/
+
+section#lanches div#lanches-opcoes-mestre{
+    width: 95%;
+}
+
+div#bebidas-opcoes{
+    width:100%;
+    align-items: center;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;    
+}
+
 /*------TIPOGRAFIA------------- */
+section#lanches h2{
+    font-size: 160%;
+
+    animation-name: LanchesH1-tablet;
+    animation-duration: 2s;
+    animation-delay: 0.9s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: backwards;
+}
+
+section#lanches p.destaque{
+    font-size: 80%;
+    width: 40%;
+
+    animation-name: Lanches-P-destaque-tablet;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: backwards;
+}
+
+section#lanches div#lanches-opcoes-mestre h4{
+    font-size: 110%;
+}
+
+/*-----------------------------*/
+/*         SEÇÃO BEBIDAS       */
+/*-----------------------------*/
+
+div#bebidas-opcoes-mestre{
+    width: 100%;    
+}
+
+div#bebidas-opcoes{
+    justify-content: center;  
+}
+
+div#bebidas-opcoes ul{
+    width: 100%;   
+}
+
+div#bebidas-opcoes ul li{
+    width: 90%;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+/*------TIPOGRAFIA------------- */
+
+section#bebidas h2{
+    font-size: 140%; 
+}
+
+section#bebidas p.destaque{
+    font-size: 80%;
+    width: 40%;
+}
+
+section#bebidas ul li p.informacao{
+    width: 90%;
+    font-size: 100%;
+    border: 2px solid #FFF;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 10px;
+
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*----------------------------*/
 /*  SEÇÃO - PLANOS            */
@@ -24,14 +128,21 @@ div.planos{
 /*----------------------------*/
 footer div#mapa{
     width: 45%;
-    margin-left: 54px;
+    margin-left: 15px;
 }
 
 footer div#info{
+    width: 40%; 
     margin-right: auto;
     
+}
+
+footer div#info div#redes-sociais{
+    width: 50%;
+    height: 70px;
 }
 
 footer div#lanche-rodape-decoracao{
     display: none;
 }
+

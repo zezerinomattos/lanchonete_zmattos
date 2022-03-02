@@ -91,7 +91,42 @@
     }
 }
 
-/*Animacao da secao lanches*/
+/*Animacao da secao lanches tablet*/
+
+@keyframes LanchesH1-tablet{
+    0%{
+        opacity: 0;
+        font-size: 50%
+    }
+
+    80%{
+        opacity: 0.6;
+        font-size: 200%
+    }
+
+    100%{
+        opacity: 1;
+        font-size: 160%;
+    }
+}
+
+@keyframes Lanches-P-destaque-tablet{
+    0%{
+        opacity: 0;
+        font-size: 30%;
+    }
+    80%{
+        font-size: 100%;
+    }
+    100%{
+        opacity: 1;
+        font-size: 80%;
+    }
+}
+
+
+
+/*Animacao da secao bebidas*/
 
 @keyframes BebidasH1{
     0%{
@@ -194,4 +229,19 @@
     }
 }
 
+/*Animacao da secao Planos*/
 
+@keyframes planos1{
+    0%{
+        opacity: 0;
+        transform: translateX(150px);
+    }
+    70%{
+        opacity: 0.5;
+        transform: translate(-20px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

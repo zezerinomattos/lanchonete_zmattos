@@ -320,8 +320,7 @@ div#bebidas-opcoes{
     margin: auto;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
-    
+    justify-content: space-around;    
 }
 
 div#bebidas-opcoes ul li{
