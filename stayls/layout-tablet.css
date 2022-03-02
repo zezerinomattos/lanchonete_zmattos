@@ -1,4 +1,91 @@
 /*----------------------------*/
+/*  ELEMENTOS DO HEADER     *
+/*----------------------------*/
+@media screen and (max-width:880px) {
+    nav ul li a{
+        padding: 10px 5px;
+        font-size: 80%;
+    }
+
+    nav ul li a.criarconta{
+        border: 1px solid #FFF;
+        padding: 5px 10px;
+        font-size: 80%;
+    }
+
+    nav ion-icon#icone-user{
+        width: 35px;
+        height: 35px;
+        margin-top: -6px;
+    }
+
+    /*------TIPOGRAFIA------------- */
+    header div#chamada h1{
+        font-size: 250%;
+
+    }
+
+    header div#chamada h4{
+        font-size: 150%;
+    }
+}
+
+/*------TIPOGRAFIA------------- */
+header div#chamada h1{
+    font-size: 320%;
+}
+
+header div#chamada h4{
+    font-size: 200%;
+}
+
+header div#chamada a{
+    padding: 20px 40px;
+}
+
+/*----------------------------*/
+/*  SEÇÃO - DIA PERFEITO      */
+/*----------------------------*/
+
+div#dia-perfeito-esquerda, div#dia-perfeito-direita{
+    display: none;
+}
+
+div#dia-perfeito-centro{
+    width: 80%;
+}
+
+/*------TIPOGRAFIA------------- */
+section#dia-perfeito div#dia-perfeito-centro p{
+    width: 100%;
+}
+
+/*----------------------------*/
+/*  SEÇÃO - DEPOIMENTOS       */
+/*----------------------------*/
+div#testemunha-esquerda, div#testemunha-direita{
+    width: 10%;
+    height: 150px;
+    cursor: pointer;
+}
+
+div#testemunha-centro{
+    width: 80%;
+}
+
+div#testemunhos{
+    position: absolute;
+    left: 0px;
+    width: 2680px;
+}
+
+/*------TIPOGRAFIA------------- */
+
+section#testemunha p.destaque{
+    width: 80%;
+}
+
+/*----------------------------*/
 /*  SEÇÃO - LANCHES           */
 /*----------------------------*/
 
@@ -87,23 +174,6 @@ section#bebidas ul li p.informacao{
     border-radius: 10px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*----------------------------*/
 /*  SEÇÃO - PLANOS            */
 /*----------------------------*/
@@ -121,6 +191,36 @@ div.planos{
         font-size: 65%;
         margin-left: 2px;
     }
+}
+
+
+/*-----------------------------*/
+/*         SEÇÃO IMAGEM        */
+/*-----------------------------*/
+
+section#imagem div#imagem-mestre ul, div#imagem-mestre-primeira-img ul{
+    width: 100%;
+    margin-left: -12px;
+    justify-content: center;
+}
+
+section#imagem div#imagem-mestre ul li, div#imagem-mestre-primeira-img ul li{
+    width: 250px;
+    height: 200px;
+}
+
+div#imagem-mestre-primeira-img ul li img{
+    width: 100%;
+    height: 100%;   
+}
+
+/*------TIPOGRAFIA------------- */
+section#imagem h2{
+    font-size: 150%;
+}
+
+section#imagem p{
+    width: 70%;
 }
 
 /*----------------------------*/

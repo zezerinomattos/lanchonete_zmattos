@@ -242,3 +242,34 @@ $('section#imagem div#imagem-mestre').waypoint(function(direcao){
 }, {
     offset:'550px;'
 })
+
+
+// açoes de menu amburguer
+
+function mostrarMenu(){
+    $('nav ul.esquerda').css('display', 'flex');
+}
+
+function esconderMenu(){
+    $('nav ul.esquerda').css('display', 'none');
+}
+
+var controle = true;
+
+$('nav ul#icone-menu').click(function(){
+    if(controle == true){
+        mostrarMenu();
+        controle = false;
+    }else{
+        esconderMenu();
+        controle = true;
+    }
+})
+
+$(window).resize(function(){
+    if($(window).width() > 812){
+        mostrarMenu();
+    }else{
+        esconderMenu();
+    }
+})

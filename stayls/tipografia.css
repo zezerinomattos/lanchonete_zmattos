@@ -72,6 +72,7 @@ p.destaque{
 header div#chamada h1{
     color: #fff;
     text-shadow: 4px 6px 10px #000;
+    margin-top: 40px;
 }
 
 header div#chamada h4{
@@ -220,6 +221,17 @@ section#bebidas ul li p.informacao{
 section#testemunha p.destaque{
     width: 40%;
 }
+
+section#testemunha div#testemunha-centro div#testemunhos ul li h5{
+    font-size: 150%;
+}
+
+section#testemunha div#testemunha-centro div#testemunhos ul li p{
+    line-height: 1.5;
+    color: #404040;
+    font-size: 90%;
+}
+
 
 /*----------------------------*/
 /*  SEÇÃO - PLANOS            */

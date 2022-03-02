@@ -30,7 +30,6 @@ header#header-index{
     position: relative;
 }
 
-
 *{
     padding: 0;
     margin: 0;
@@ -47,8 +46,8 @@ nav div#logo{
     background-image: url(../imagens/img_logo.png);
     background-size: contain;
     background-repeat: no-repeat;
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     float: left;
 
     animation-name: ChamadaA;
@@ -81,7 +80,7 @@ nav ul li{
 nav ul li a{
     color: white;
     text-decoration: none;
-    padding: 10px 30px;
+    padding: 10px 15px;
     border-radius: 100px;
 
     font-size: 90%;
@@ -118,6 +117,10 @@ header div#chamada{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+nav ul#icone-menu{
+    display: none;
 }
 
 /*----------------------------*/
@@ -407,15 +410,6 @@ section#testemunha div#testemunha-centro div#testemunhos ul li{
     margin: 0;
 }
 
-section#testemunha div#testemunha-centro div#testemunhos ul li h5{
-    font-size: 150%;
-}
-
-section#testemunha div#testemunha-centro div#testemunhos ul li p{
-    line-height: 1.5;
-    color: #404040;
-    font-size: 90%;
-}
 
 section#testemunha div#testemunha-centro div#testemunhos ul li img{
     width: 40%;
