@@ -147,7 +147,7 @@ $('section#plano-principal').waypoint(function(direcao){
     offset:'0px;'
 })
 
-$('section#plano-principal h2').waypoint(function(direcao){
+/*$('section#plano-principal h2').waypoint(function(direcao){
     if(direcao == 'down'){
         console.log('descendo');
     }
@@ -156,7 +156,7 @@ $('section#plano-principal h2').waypoint(function(direcao){
     }
 }, {
     offset:'0px;'
-})
+})*/
 
 /*----------------------------
   SEÇÃO - Bebidas            
@@ -242,7 +242,6 @@ $('section#imagem div#imagem-mestre').waypoint(function(direcao){
 }, {
     offset:'550px;'
 })
-
 
 // açoes de menu amburguer
 

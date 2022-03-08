@@ -40,11 +40,6 @@
 
         z-index: 999;
         display: none;
-
-        animation-name:  menuA-mobaile;
-        animation-duration: 0.8s;
-        animation-timing-function: ease-out;
-        animation-fill-mode: backwards;
     }
 
     nav ul li{

@@ -1,18 +1,5 @@
 /*Animacao do titulo*/
 
-@keyframes menuA-mobaile{
-    0%{
-        opacity: 0;
-    }
-    80%{
-        opacity: 0.9;
-    }
-    100%{
-        opacity: 1;
-    }
-}
-
-
 @keyframes HeaderH1{
     0%{
         opacity: 0;
